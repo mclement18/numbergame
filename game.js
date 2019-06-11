@@ -26,7 +26,7 @@ function evaluateGuess(secretNumber, attempts) {
 
 console.log("Welcome in the guess the number game!");
 console.log("You have to find the secret number which is between 1 and 100.");
-var secretNumber = Math.floor(Math.random() * 101);
+var secretNumber = Math.floor(Math.random() * 100 + 1);
 var attempts = 0;
 
 while (true) {
