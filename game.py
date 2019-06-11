@@ -15,7 +15,11 @@ def evaluate_guess(secret_number, attempts):
         print("The secret number is smaller!")
         success = False
     elif guess == secret_number:
-        print("Congratulation! You found the secret number in " + str(attempts) + " attempts!")
+        if attempts == 1:
+            attempt_word = " attempt!"
+        else:
+            attempt_word = " attempts!"
+        print("Congratulation! You found the secret number in " + str(attempts) + attempt_word)
         success = True
     return success
 
